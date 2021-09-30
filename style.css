@@ -1,0 +1,113 @@
+* {
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #222222;
+}
+
+.main-game {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.genius {
+    display: grid;
+    grid-template-areas: 'green yellow'
+    'red blue';
+    background-color: white;
+    border-radius: 100%;
+    width: 700px;
+    height: 700px;
+}
+
+.green {
+    background-color: green;
+    grid-area: green;
+    border-top-left-radius: 100%;
+    filter: brightness(75%);
+    border-style: none;
+}
+
+.yellow {
+    background-color: yellow;
+    grid-area: yellow;
+    border-top-right-radius: 100%;
+    filter: brightness(75%);
+    border-style: none;
+}
+
+.red {
+    background-color: red;
+    grid-area: red;
+    border-bottom-left-radius: 100%;
+    filter: brightness(75%);
+    border-style: none;
+}
+
+.blue {
+    background-color: blue;
+    grid-area: blue;
+    border-bottom-right-radius: 100%;
+    filter: brightness(75%);
+    border-style: none;
+}
+
+.lit {
+    filter: brightness(200%);
+}
+
+.green:hover, .yellow:hover, .red:hover, .blue:hover {
+    filter: brightness(100%);
+    cursor: pointer;
+}
+
+.menu {
+    border-radius: 15px;
+    width: 400px;
+    background-color: #b038b4;
+    margin-top: 75px;
+    justify-content: space-around;
+    display: flex;
+    padding: 20px;
+}
+
+.new-game-btn {
+    border-style: none;
+    border-radius: 10px;
+    background-color: #DEDEDE;
+}
+
+.new-game-btn:hover {
+    filter: brightness(85%);
+    cursor: pointer;
+}
+
+.message-container {
+    top: 25vh;
+    left: 10vw;
+    z-index: 5;
+    position: absolute;
+    background-color: #DADADA;
+    width: 80vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.invisible {
+    display: none;
+}
+
+.message {
+    font-size: xx-large;
+}
