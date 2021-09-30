@@ -6,7 +6,7 @@ This is a very simple interpretation of the famous "Genius" game on the web.
 
 ## How to run it?
 
-### You can see a live version [here](https://coffeevictor.github.io/genius/)
+### You can see a live version [here](https://coffeevictor.github.io/genius/src/)
 
 1. Clone the project
    - ``git clone git@github.com:CoffeeVictor/genius.git``
