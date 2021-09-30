@@ -50,7 +50,7 @@ blue.onclick = () => {
 }
 
 function playAudio(idx) {
-    const audio = new Audio(`/assets/note0${idx}.wav`)
+    const audio = new Audio(`./assets/note0${idx}.wav`)
 
     audio.play()
 
